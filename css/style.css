@@ -11370,37 +11370,47 @@ li.drop-down:hover .drop-items {
 
 .blog-sections {
   padding: 60px 20px;
-  background: #111; /* Dark background */
+  background: #111;
   color: #fff;
 }
 
 .blog-sections .container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 30px;
+  grid-template-columns: 1fr 2fr; /* ✅ Left: news, Right: blogs */
+  gap: 40px;
   max-width: 1200px;
   margin: auto;
   align-items: start;
 }
 
 .news-box {
-  background:goldenrod; /* Green box */
+  background: goldenrod;
   padding: 25px;
   border-radius: 12px;
   color: #fff;
-  height: 555px; /* Fixed height, optional */
+  min-height: 100%; /* ✅ let it grow naturally */
 }
 
 .news-box h2 {
-  margin-bottom: 20px; /* Gap under heading */
+  margin-bottom: 20px;
   color: #BE2A4B;
 }
 
 .news-box p {
-  margin-bottom: 40px;  /* ✅ Gap between paragraphs */
-  line-height: 1.6;     /* ✅ Better readability */
+  margin-bottom: 50px;
+  line-height: 1.6;
 }
 
+.news-box a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.news-box a:hover {
+  color: #BE2A4B;
+}
 
 .news-box span {
   float: right;
@@ -11410,13 +11420,13 @@ li.drop-down:hover .drop-items {
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
 .blog-card {
-  /* background: #1e1e1e; */
   border-radius: 12px;
   overflow: hidden;
+  background: #1e1e1e;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -11430,24 +11440,31 @@ li.drop-down:hover .drop-items {
   height: 220px;
   object-fit: cover;
   display: block;
-  border-radius: 5%;
+  border-radius: 0;
+   margin: 0;            /* ✅ no unwanted space */
+  padding: 0; 
 }
 
 .blog-card h3 {
   padding: 15px;
   font-size: 1.1rem;
   color: #BE2A4B;
+  background: #fff;
+  color: #111;
+  font-weight: 600;
+  margin: 0;
 }
-  
-/* ✅ Responsive */
-@media (max-width: 900px) {
-  .blog-section .container {
+
+/* ✅ Responsive for tablets/mobiles */
+@media (max-width: 992px) {
+  .blog-sections .container {
     grid-template-columns: 1fr;
   }
   .news-box {
     margin-bottom: 20px;
   }
 }
+
 
 
 .blog-section {
