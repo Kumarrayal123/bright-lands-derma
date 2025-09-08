@@ -7755,7 +7755,7 @@ button.bg-dark:focus {
 }
 
 .shadow {
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important; */
 }
 
 .shadow-lg {
@@ -10930,7 +10930,7 @@ li.drop-down:hover .drop-items {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 50px;
-  color:#BE2A4B;
+  color: #2e1459;
 }
 
 /* Row Layout */
@@ -11368,13 +11368,13 @@ li.drop-down:hover .drop-items {
   background: #fff4f7;
 } */
 
-.blog-section {
+.blog-sections {
   padding: 60px 20px;
   background: #111; /* Dark background */
   color: #fff;
 }
 
-.blog-section .container {
+.blog-sections .container {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 30px;
@@ -11449,11 +11449,98 @@ li.drop-down:hover .drop-items {
   }
 }
 
-.testimonial-stars {
-  color: #FFD700; /* Gold stars */
-  margin: 5px 0 10px 0;
-  font-size: 14px;
+
+.blog-section {
+  padding: 40px 20px;
+  background:lightpink;
 }
-.testimonial-stars i {
-  margin-right: 2px;
+
+.blog-wrapper {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
+
+.blog-content h2 {
+  font-size: 28px;
+  color: #BE2A4B;
+  margin-bottom: 15px;
+}
+
+.blog-content h3 {
+  font-size: 22px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color:#BE2A4B;
+}
+
+.blog-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.blog-content ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-content ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #000;
+}
+
+.highlight {
+  color: #BE2A4B;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-wrapper {
+    padding: 20px;
+  }
+  .blog-content h2 {
+    font-size: 24px;
+  }
+  .blog-content h3 {
+    font-size: 20px;
+  }
+  .blog-content p, 
+  .blog-content ul li {
+    font-size: 15px;
+    color: #000;
+  }
+}
+
+.news-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-appointment {
+  display: inline-block;
+  background: #BE2A4B; /* professional brand color */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-appointment:hover {
+  background: #a0203e; /* darker shade on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+
+
