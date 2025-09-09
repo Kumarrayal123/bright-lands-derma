@@ -10090,7 +10090,6 @@ h6,
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  /* margin: 0 5px 10px 5px; */
   background: #f9df7a;
   border: 1px solid #ffffff;
   transition: 0.2s;
@@ -11086,16 +11085,19 @@ li.drop-down:hover .drop-items {
 }
 
 .faq-item.active .faq-answer {
-  max-height: 500px;  /* large enough for content */
+  max-height: 500px; 
   padding: 30px 20px;
   background-color: #BE2A4B;
- 
+
 }
+ 
+
 
 .faq-answer p {
   margin: 0;
    color: goldenrod;
   line-height: 1.6;
+ 
 }
 
 .doctor {
@@ -11632,4 +11634,26 @@ background-color: #dd8acc;
 .welcome{
 color: #BE2A4B;
 
+}
+
+.sania{
+  color: #BE2A4B;
+}
+
+.down-footer{
+  border-color: goldenrod !important; 
+  background-color: #BE2A4B;
+}
+.bright{
+  color:  goldenrod !important;
+}
+.rights{
+  color:  goldenrod !important;
+}
+.heroo-text{
+  letter-spacing: 1px;
+
+}
+.special{
+  color: #BE2A4B;
 }
