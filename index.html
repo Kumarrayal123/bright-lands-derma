@@ -375,48 +375,76 @@
   <div class="container-fluid py-2 abt-sec">
     <div class="container py-5">
       <div class="row align-items-center">
-        <div class="col-lg-6">
-          <h6 class="d-inline-block text-white text-uppercase bg-light py-1 px-2">
+
+        <!-- Left Side (Text) -->
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h6 class="d-inline-block text-uppercase bg-light text-dark py-1 px-2">
             About Us
           </h6>
           <h1 class="mb-4">
-            <span>WELCOME TO</span> <span class="welcome"> Bright Lands Derma</span>
+            <span>WELCOME TO</span>
+            <span class="welcome"> Bright Lands Derma</span>
           </h1>
           <p class="pl-4 border-left border-primary">
-            BrightLands Skin, Hair & Laser Clinic is much more than a skin clinic and medical treatment location. We
-            have proudly placed our clinic in exceptional locations to make it easily accessible to all.
+            BrightLands Skin, Hair & Laser Clinic is much more than just a treatment center –
+            it is a space where science meets care. With advanced dermatology solutions,
+            we ensure every patient receives the best-in-class treatment in a comfortable and friendly environment.
           </p>
           <p class="pl-4 border-left border-primary">
-            Our clinic is headed by Chief Consultant Dermatologist Dr. Sania Riaz, (MBBS, MD DVL), Consultant
-            Dermatologist, Cosmetologist & Trichologist. Dr. Sania is excessively passionate about delivering solutions
-            that are result-focused and provide utmost client satisfaction. She has received multiple awards for her
-            excellence in the field of Dermatology.
+            Our clinic is led by <strong>Dr. Sania Riaz (MBBS, MD DVL)</strong>,
+            a Consultant Dermatologist, Cosmetologist & Trichologist.
+            With her expertise and passion for skin health, she has helped countless individuals
+            achieve glowing skin, healthy hair, and renewed confidence.
+            Recognized with multiple awards, Dr. Sania is committed to delivering
+            safe, result-oriented treatments that truly make a difference.
           </p>
-          <div class="row pt-3 center-row"></div>
         </div>
 
-        <!-- <div class="col-lg-6 pb-5 pb-lg-0 abt-img">
-          <img class="img-fluid w-100 about-img" src="/imge/about-1.jpg" alt="skin care" />
-        </div> -->
+        <!-- Right Side (Image) -->
+        <div class="col-lg-6 text-center">
+          <img class="img-fluid about-img" src="imge/about-1.jpg" alt="Bright Lands Derma Clinic">
+        </div>
 
       </div>
     </div>
   </div>
 
+
   <style>
-    /* Ensure About Us image is visible on all devices */
-.abt-img img {
-  width: 100% !important;
-  /* height: auto !important; */
-  display: block;
-  object-fit: cover; /* keeps it neat, can use contain if you don't want crop */
+    /* About Section Styling */
+.abt-sec {
+  background-color: #f9f9f9; /* subtle light bg */
 }
 
-/* Adjust spacing on mobile */
+.welcome {
+  color: #BE2A4B; /* brand highlight color */
+  font-weight: bold;
+}
+
+.about-img {
+  border-radius: 12px;          /* smooth rounded corners */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15); /* soft shadow */
+  max-height: 450px;           /* balanced height */
+  object-fit: cover;           /* crop properly */
+}
+
+/* Paragraph Styling */
+.abt-sec p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Mobile Adjustments */
 @media (max-width: 768px) {
-  .abt-img {
-    padding: 0 !important;
-    margin-top: 20px; /* adds little spacing */
+  .about-img {
+    max-height: 300px;
+    margin-top: 20px;
+  }
+
+  .abt-sec h1, 
+  .abt-sec p {
+    text-align: center; /* center text on mobile */
   }
 }
 
@@ -837,7 +865,7 @@
 
     </div>
   </div>
- 
+
 
 
 
