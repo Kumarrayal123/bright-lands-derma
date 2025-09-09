@@ -559,33 +559,36 @@ mark,
 /*whatsapp*/
 .whatsapp {
   position: fixed;
-  bottom: 10px;
-  left: 10px;
-  font-size: 25px;
-  background-color: goldenrod;
-  border-radius: 50%;
-  box-shadow: 2px 5px 10px;
+  bottom: 20px;
+  right: 20px;
   z-index: 999;
   animation: w 1s linear infinite;
 }
-@keyframes w {
-  0%,
-  100% {
-    margin-bottom: 5px;
-  }
-  50% {
-    margin-bottom: 0px;
-  }
-}
+
 .whatsapp a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;   /* size */
+  height: 50px;
+  border-radius: 50%;
+  background-color: #25D366; /* WhatsApp green */
   color: white;
-  padding: 12px;
-}
-.whatsapp:hover a {
-  color: white;
-  transition: 0.1s ease-in-out;
+  font-size: 35px;  /* icon size */
   text-decoration: none;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease-in-out;
 }
+
+.whatsapp a:hover {
+  transform: scale(1.1);
+}
+
+@keyframes w {
+  0%, 100% { margin-bottom: 8px; }
+  50% { margin-bottom: 0px; }
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
