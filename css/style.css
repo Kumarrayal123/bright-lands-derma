@@ -11559,5 +11559,77 @@ li.drop-down:hover .drop-items {
   box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
+.custom-toggler {
+  background-color: #BE2A4B;
+  box-shadow: 0px 2px 10px #BE2A4B;
+  border: none; /* optional: removes default border */
+}
+
+.logo {
+  width: 100px;   /* logo size */
+  height: auto;   /* keeps aspect ratio */
+  display: block; /* removes unwanted inline gaps */
+}
 
 
+
+/* Footer Bar */
+.footer-bar {
+  border-top: 1px solid goldenrod;
+  background-color: #000; /* professional black */
+  padding: 1rem 0;
+  background-color: #BE2A4B;
+}
+
+/* Footer Text */
+.footer-text {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+/* Footer Links */
+.footer-link {
+  color: goldenrod;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #d4af37; /* elegant golden shade */
+  text-decoration: underline;
+}
+
+.Results{
+background-color: #dd8acc;
+}
+
+/* About Image Container */
+.abt-img {
+  height: 550px;
+  width: 400px;
+}
+
+/* About Image Styling */
+.about-img {
+  object-fit: cover; /* ensures image fills container nicely */
+  height: 100%;
+  border-radius: 8px; /* optional: rounded corners for modern look */
+}
+
+/* Centered row content */
+.center-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abt-sec{
+  background-color: lightpink;
+}
+.welcome{
+color: #BE2A4B;
+
+}
