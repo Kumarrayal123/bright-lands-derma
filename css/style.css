@@ -10114,26 +10114,30 @@ h6,
 
 .service-item img {
   position: relative;
-  margin-top: 40px;
   transition: 0.5s;
+  width: 100%;       /* make image responsive */
+  height: auto;      /* keep aspect ratio */
+  margin-top: 0;     /* default no margin */
+}
+@media (min-width: 768px) {
+  .service-item img {
+    margin-top: 40px;
+  }
 }
 
 .service-item .service-text {
   position: absolute;
   width: 100%;
-  height: calc(100% + 86px);
+  height: 100%;   /* match container height */
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  /* background: rgba(33, 30, 28, 0.5); */
   transition: 0.5s;
   z-index: 1;
-    margin: 15px;
-
-  
+  padding: 15px;   /* use padding instead of margin */
 }
 
 .service-item:hover img {
