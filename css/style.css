@@ -11257,7 +11257,7 @@ li.drop-down:hover .drop-items {
 }
 
 .footer-logo {
-  width: 160px;
+  width: 220px;
   padding: 10px;
 }
 
@@ -11576,7 +11576,7 @@ li.drop-down:hover .drop-items {
 }
 
 .logo {
-  width: 100px;   /* logo size */
+  width: 200px;   /* logo size */
   height: auto;   /* keeps aspect ratio */
   display: block; /* removes unwanted inline gaps */
 }
