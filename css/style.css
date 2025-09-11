@@ -11667,3 +11667,19 @@ color: #BE2A4B;
 }
 
 
+.hero-img {
+  min-height: 100vh;
+  background-position: bottom;
+}
+
+.cImg {
+  object-fit: cover;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero-title {
+  letter-spacing: 1px;
+}
