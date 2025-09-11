@@ -11683,15 +11683,20 @@ color: #BE2A4B;
 .hero-title {
   letter-spacing: 1px;
 }
+
 .car{
   padding: 0;
 }
-.barr{
-  margin-left: auto;
-}
+
 .serve-drop{
   float: left;
 }
 .back-to-top{
   color: white !important;
+}
+.page{
+  margin-left: auto;
+}
+.plus-drop{
+  float: left;
 }
