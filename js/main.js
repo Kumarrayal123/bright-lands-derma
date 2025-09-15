@@ -119,15 +119,26 @@ $(window).scroll(function () {
  * add event on element
  */
 
+// const addEventOnElem = function (elem, type, callback) {
+//   if (elem.length > 1) {
+//     for (let i = 0; i < elem.length; i++) {
+//       elem[i].addEventListener(type, callback);
+//     }
+//   } else {
+//     elem.addEventListener(type, callback);
+//   }
+// };
+
 const addEventOnElem = function (elem, type, callback) {
-  if (elem.length > 1) {
+  if (elem instanceof NodeList || elem instanceof HTMLCollection) {
     for (let i = 0; i < elem.length; i++) {
       elem[i].addEventListener(type, callback);
     }
-  } else {
+  } else if (elem) {
     elem.addEventListener(type, callback);
   }
 };
+
 
 const filterBtns = document.querySelectorAll("[data-filter-btn]");
 const filterItems = document.querySelectorAll("[data-filter]");
